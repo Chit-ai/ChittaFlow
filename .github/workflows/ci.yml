@@ -18,11 +18,18 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
+
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8
+
+    - name: Setup pnpm cache
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
         cache: 'pnpm'
         cache-dependency-path: frontend/pnpm-lock.yaml
-    - name: Install pnpm
-      run: npm install -g pnpm
-
     - name: Install dependencies
       run: |
         cd frontend
@@ -98,7 +105,7 @@ jobs:
         output: 'trivy-results.sarif'
         
     - name: Upload Trivy scan results
-      uses: github/codeql-action/upload-sarif@v2
+      uses: github/codeql-action/upload-sarif@v3
       if: always()
       with:
         sarif_file: 'trivy-results.sarif'
