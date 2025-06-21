@@ -6,9 +6,11 @@ on:
   pull_request:
     branches: [ main ]
 
+# Add these permissions at the top level
 permissions:
-  contents: read
   security-events: write
+  actions: read
+  contents: read
 
 jobs:
   frontend-tests:
@@ -95,7 +97,12 @@ jobs:
         
   security-scan:
     runs-on: ubuntu-latest
-    
+    # These permissions are required for SARIF upload
+    permissions:
+      security-events: write
+      actions: read
+      contents: read
+      
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
