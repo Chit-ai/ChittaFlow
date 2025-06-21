@@ -1,0 +1,58 @@
+# Chit.ai - Complete Project Files
+
+# Dependencies
+node_modules/
+venv/
+env/
+__pycache__/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Firebase
+.firebase/
+firebase-debug.log
+
+# Deployment
+.vercel/
+.netlify/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Coverage reports
+coverage/
+.coverage
+.nyc_output
+
+# Cache
+.cache/
+.parcel-cache/
+
