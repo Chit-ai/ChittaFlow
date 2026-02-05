@@ -105,7 +105,7 @@ pillow==11.2.1
 posthog==5.1.0
 prompt_toolkit==3.0.51
 propcache==0.3.2
-protobuf==5.29.5
+protobuf==5.29.6
 ptyprocess==0.7.0
 pure_eval==0.2.3
 pyasn1==0.6.1
