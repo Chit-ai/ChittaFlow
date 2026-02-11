@@ -19,7 +19,7 @@ chromadb==1.0.13
 click==8.2.1
 coloredlogs==15.0.1
 crewai==0.130.0
-cryptography==45.0.4
+cryptography==46.0.5
 dataclasses-json==0.6.7
 decorator==5.2.1
 distro==1.9.0
